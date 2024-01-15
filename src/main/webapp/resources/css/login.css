@@ -1,0 +1,92 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 2 may. 2023, 23:35:24
+    Author     : sgranjot
+*/
+
+body {
+    background-image: url('../img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    font-family: 'Open Sans', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.flex-container{
+    display: flex;
+    align-content: center;
+    justify-content: space-around
+
+}
+
+/*boton pagina inicial*/
+.button{
+    border: 2px solid #d2c129;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #d2c129;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline;
+}
+
+.button:hover {
+    background-color: #d2c129;
+    color: white;
+}
+
+/*botones login*/
+.buttonVerde{
+    border: 2px solid #006666;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #006666;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buttonVerde:hover {
+    background-color: #006666;
+    color: white;
+}
+
+/*imagen logo en login*/
+.imgLogo{
+    margin-right: auto;
+    margin-top:  auto;
+    display: inline;
+}
+
+.login{
+    width: 25%;
+    height: 550px;
+    margin-top: 4%;
+    margin-right: 50%;
+    display: none;
+}
+
+
+.inputTextLogin{
+    width: 80%;
+    height: 20px;
+    border-radius: 7px;
+    padding: 2px;
+}
+
+#btnIniciar{
+    pointer-events: none;
+}
+
+#btnConfirmRegist{
+    pointer-events: none;
+}
+
+
+
+
+
+

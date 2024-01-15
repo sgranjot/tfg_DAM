@@ -1,0 +1,175 @@
+/* Estilos generales */
+body,
+html {
+    height: 97%;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: "Open Sans", "Roboto", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Contenedor del menú */
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #006666;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+/* Permitir desplazamiento vertical en el menú al pasar el cursor sobre él */
+.menu-container:hover {
+    overflow-y: scroll;
+}
+
+/* Estilos del menú */
+.menu {
+    padding: 0;
+    list-style: none;
+    width: 180px;
+    transition: width 0.3s ease;
+}
+
+.menu li {
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.menu li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu li a img {
+    margin-right: 10px;
+}
+
+.menu li .menu-text {
+    display: none;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 30px;
+}
+
+/* Mostrar texto del menú al pasar el cursor sobre él */
+.menu li:hover .menu-text {
+    display: inline;
+}
+
+.menu li .sub-text {
+    display: none;
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Mostrar subtexto al pasar el cursor sobre el menú */
+.menu-container:hover .menu li .sub-text {
+    display: block;
+}
+
+/* Expandir el menú al pasar el cursor sobre él */
+.menu:hover {
+    width: 400px;
+}
+
+.menu li:hover {
+    /* background-color: #eac100;*/
+}
+
+/* Cambiar el color del enlace al pasar el cursor sobre el menú */
+.menu li:hover a {
+    color: #eac100;
+}
+
+/* Mostrar texto del menú al pasar el cursor sobre él o el menú */
+.menu li:hover .menu-text,
+.menu:hover .menu-text {
+    display: inline;
+}
+
+/* Cambiar el tamaño del logo al pasar el cursor sobre el menú */
+.menu-container:hover .menu li:first-child img {
+    width: 220px; /* Cambia el tamaño del logo aquí según tus preferencias */
+}
+
+/* Centrar el contenido del primer elemento del menú al pasar el cursor sobre él */
+.menu-container:hover .menu li:first-child a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    width: 100%-200px;
+    height: 100%;
+    margin-left: 200px;
+    margin-top: 0px;
+    position: relative;
+    background-image: url('../img/fondoLogo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+
+}
+
+.content .yellow-box {
+    width: 20%;
+    height: 70px;
+}
+
+.content .dropdown-menu {
+    width: 160px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.content .dropdown-menu nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content .dropdown-menu nav li {
+    padding: 5px;
+}
+
+.content .dropdown-menu nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.content .dropdown-menu nav li:hover li:hover{
+    background-color: #eac100;
+}
+
+.content .white-box {
+    width: 30%;
+    height: 60px;
+    margin: 60px auto;
+    margin-left: 15%;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.sub-menu {
+    display: none;
+}
+
+.usuario:hover + .sub-menu,
+.sub-menu:hover {
+    display: block;
+}
+
+.align-right {
+    text-align: right;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+
